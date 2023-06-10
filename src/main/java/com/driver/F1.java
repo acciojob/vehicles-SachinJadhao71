@@ -5,9 +5,26 @@ public class F1 extends Car {
     public String name;
     private boolean isManual;
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isManual() {
+        return isManual;
+    }
+
+    public void setManual(boolean manual) {
+        isManual = manual;
+    }
 
     public F1(String name, boolean isManual) {
-        new Car();
+        super();
         this.name = name;
         this.isManual = isManual;
     }
